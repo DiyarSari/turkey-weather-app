@@ -115,7 +115,7 @@ const Batch = 12;                      // Number of cities shown per page
 ## 📁 Project Structure
 
 ```
-Weather-App/
+turkey-weather-app/
 ├── index.html      # HTML structure
 ├── index.js        # JavaScript logic and API calls
 ├── style.css       # Styling
