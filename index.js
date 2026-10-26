@@ -1,4 +1,3 @@
-const Key = "YOUR_API_KEY";
 const Lang = "tr";
 const Units = "metric";
 

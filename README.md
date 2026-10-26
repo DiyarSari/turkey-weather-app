@@ -95,18 +95,23 @@ const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city},TR&appid
 
 1. **Create OpenWeatherMap Account**: https://openweathermap.org/api
 2. **Get Your API Key**: Log in and copy your API key
-3. **Update the Key**: Replace the `Key` variable in `index.js`
+3. **Add the Key**: Copy `config.example.js` to `config.js` and paste your key there
 4. **Open in Browser**: Open `index.html` in your browser
 
+```bash
+cp config.example.js config.js
+```
+
 ```javascript
-// Update this line in index.js
+// config.js (gitignored, never committed)
 const Key = "your-api-key-here";
 ```
 
 ## 📋 Constants
 
+The API key lives in `config.js`; the rest are defined at the top of `index.js`:
+
 ```javascript
-const Key = "API_KEY";                 // OpenWeatherMap API key
 const Lang = "en";                     // Language (en = English)
 const Units = "metric";                // Temperature unit (Celsius)
 const Batch = 12;                      // Number of cities shown per page
@@ -118,6 +123,7 @@ const Batch = 12;                      // Number of cities shown per page
 turkey-weather-app/
 ├── index.html      # HTML structure
 ├── index.js        # JavaScript logic and API calls
+├── config.example.js # Template for config.js (holds your API key, gitignored)
 ├── style.css       # Styling
 └── README.md       # This file
 ```
